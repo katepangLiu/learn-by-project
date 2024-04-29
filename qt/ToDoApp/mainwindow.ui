@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QLineEdit" name="lineEdit">
+   <widget class="QLineEdit" name="editTaskItem">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -37,7 +37,7 @@
      <string>Add</string>
     </property>
    </widget>
-   <widget class="QListWidget" name="listWidget">
+   <widget class="QListWidget" name="listWidgetTasks">
     <property name="geometry">
      <rect>
       <x>20</x>
