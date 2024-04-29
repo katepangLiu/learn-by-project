@@ -17,6 +17,7 @@ void MainWindow::on_btnAdd_clicked()
 {
     QString taskItem = ui->editTaskItem->text();
     QListWidgetItem* listItem = new QListWidgetItem(taskItem, ui->listWidgetTasks);
+    listItem->setFlags(listItem->flags() | Qt::ItemIsEditable);
     ui->listWidgetTasks->addItem(listItem);
     ui->editTaskItem->clear();
     ui->editTaskItem->setFocus();
