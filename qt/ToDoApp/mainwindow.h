@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <qstandardpaths.h>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -24,7 +25,12 @@ private slots:
 
     void on_btnRemoveAll_clicked();
 
+    void storeTasksToFile();
+    void restoreTasksFromFile();
+
 private:
     Ui::MainWindow *ui;
+
+    QString filePath = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation)+"\\todoFile.txt";
 };
 #endif // MAINWINDOW_H
